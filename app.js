@@ -231,6 +231,579 @@ const paradoxesData = {
       "visualMetaphor": "Balance scales showing the tension between tolerance and its limits",
       "color": "#87CEEB"
     }
+
+  // ─────────────────────────────────────────────────────────────────────
+  // EXTENDED ARCHIVE — 50 additional Western + Eastern thought experiments
+  // Each specimen follows the original engine schema so all existing
+  // search, filtering, bookmarking, exploration, modal and quiz systems work.
+  // ─────────────────────────────────────────────────────────────────────
+  {
+    id:"sorites", title:"Sorites Paradox", category:"Logical", philosopher:"Eubulides of Miletus",
+    summary:"If removing one grain cannot make a heap cease to be a heap, when does the heap disappear?",
+    description:"The Sorites paradox arises from vague predicates. A heap remains a heap after removing one grain; repeating that apparently harmless step eventually removes every grain. Where, exactly, does the concept change?",
+    structure:["A million grains clearly form a heap","Remove one grain and it still seems a heap","Repeat the same reasoning grain by grain","Vagueness makes the boundary impossible to locate"],
+    examples:["Baldness","Tall versus short","When a collection becomes a crowd","When a pile becomes a pile of nothing"],
+    modernRelevance:"AI classification thresholds, fuzzy logic, law, medical diagnosis and machine-learning decision boundaries",
+    visualMetaphor:"A heap dissolving grain by grain while the label remains unchanged", color:"#ff8a65"
+  },
+  {
+    id:"barber", title:"The Barber Paradox", category:"Logical", philosopher:"Bertrand Russell",
+    summary:"A barber shaves all and only those men in the village who do not shave themselves. Who shaves the barber?",
+    description:"If the barber shaves himself, he violates the rule. If he does not, the rule requires him to shave himself. The apparently ordinary definition generates an impossible object.",
+    structure:["Define the barber by a universal rule","Ask whether the barber shaves himself","If yes, the rule is broken","If no, the rule requires him to shave himself"],
+    examples:["Self-excluding membership rules","Recursive software permissions","Systems that define their own exceptions"],
+    modernRelevance:"Type systems, access-control logic, automated policy engines and recursive definitions",
+    visualMetaphor:"A razor circling back toward its own handle", color:"#7c8cff"
+  },
+  {
+    id:"berry", title:"Berry's Paradox", category:"Linguistic", philosopher:"G. G. Berry / Bertrand Russell",
+    summary:"How can a phrase refer to the smallest number that cannot be described in fewer than a certain number of words?",
+    description:"Berry's paradox exposes how natural language can generate self-referential descriptions that seem to define an object while simultaneously defeating the constraints of the definition.",
+    structure:["Specify a word-length limit","Refer to the first number not describable within that limit","The phrase itself appears to describe it","Language has escaped the rule it stated"],
+    examples:["Self-referential definitions","Search queries that define their own target","AI prompts that describe impossible specifications"],
+    modernRelevance:"Natural-language AI, computability, prompt interpretation and semantic ambiguity",
+    visualMetaphor:"A sentence folding into a smaller sentence that points back to itself", color:"#a78bfa"
+  },
+  {
+    id:"grelling", title:"Grelling–Nelson Paradox", category:"Linguistic", philosopher:"Kurt Grelling / Leonard Nelson",
+    summary:"Is the word 'heterological' heterological if it does not describe itself?",
+    description:"Words that describe themselves are autological; words that do not are heterological. Asking whether 'heterological' describes itself creates a semantic loop resembling the Liar paradox.",
+    structure:["Classify predicates as self-describing or not","Ask whether 'heterological' describes itself","Either answer flips the classification","The predicate destabilizes its own definition"],
+    examples:["Adjectives that describe themselves","Meta-language classification","Programming labels that alter their own semantics"],
+    modernRelevance:"Natural-language processing, type systems and semantic self-reference",
+    visualMetaphor:"A label attached to a word that changes when you read the label", color:"#ff5ca8"
+  },
+  {
+    id:"curry", title:"Curry's Paradox", category:"Logical", philosopher:"Haskell Curry",
+    summary:"A conditional that merely refers to itself can appear to prove almost anything.",
+    description:"Curry's paradox shows that certain combinations of implication, self-reference and naive truth rules can trivialize a logical system without using negation.",
+    structure:["Construct a self-referential conditional","Assume the antecedent","Use the system's own implication rules","The arbitrary conclusion appears derivable"],
+    examples:["Self-referential proofs","Programming languages with unsafe recursion","Naive semantic theories"],
+    modernRelevance:"Formal verification, theorem provers, programming-language semantics and foundations of logic",
+    visualMetaphor:"A proof arrow that loops around and points to every possible conclusion", color:"#5eead4"
+  },
+  {
+    id:"pinocchio", title:"Pinocchio Paradox", category:"Logical", philosopher:"Veronica Frenkel",
+    summary:"Pinocchio says, 'My nose is growing.' If it grows, he spoke truth; if it does not, he lied.",
+    description:"The Pinocchio paradox turns a fictional character's physical response to lying into a self-referential truth problem.",
+    structure:["Pinocchio makes a prediction about his nose","If it grows, the statement was true","If it does not, the statement was false and should trigger growth","The causal rule loops back into truth"],
+    examples:["Automated fact-checkers","Sensors responding to their own predictions","Feedback-controlled systems"],
+    modernRelevance:"AI agents, feedback loops, prediction systems and cybernetics",
+    visualMetaphor:"A growing nose becoming a circular feedback signal", color:"#fb7185"
+  },
+  {
+    id:"unexpected-exam", title:"Unexpected Hanging / Surprise Exam", category:"Epistemic", philosopher:"Carl Hempel / Lennart",
+    summary:"If a punishment must be unexpected, can logical reasoning eliminate every possible day?",
+    description:"The surprise-exam family of puzzles asks whether perfect reasoning about another person's knowledge can destroy the very surprise being predicted.",
+    structure:["An event will occur on one of several days","It must be unexpected when it occurs","Backward reasoning appears to eliminate the final day","The same reasoning propagates backward until every day seems impossible"],
+    examples:["Surprise tests","Court judgments","Public announcements and prediction"],
+    modernRelevance:"Epistemic logic, game theory, security and adversarial reasoning",
+    visualMetaphor:"A calendar whose dates disappear as soon as they are predicted", color:"#facc15"
+  },
+  {
+    id:"crocodile", title:"Crocodile Paradox", category:"Logical", philosopher:"Ancient Greek logical tradition",
+    summary:"A crocodile promises to return a child only if the parent's prediction about its choice is correct.",
+    description:"A promise about a future decision creates a loop between the crocodile's action and the truth of the parent's prediction.",
+    structure:["Crocodile takes a child","Parent predicts whether the child will be returned","Crocodile uses truth of prediction as its condition","Either response can destabilize the promise"],
+    examples:["Conditional contracts","Self-referential promises","Automated decision policies"],
+    modernRelevance:"Legal logic, contract design and strategic AI systems",
+    visualMetaphor:"Two jaws closing around a conditional statement", color:"#84cc16"
+  },
+  {
+    id:"raven", title:"Raven Paradox", category:"Epistemic", philosopher:"Carl Hempel",
+    summary:"If observing a non-black non-raven confirms that all ravens are black, why does a green apple teach us about ravens?",
+    description:"Hempel's confirmation paradox challenges our intuition about inductive evidence. Logically equivalent formulations of a hypothesis can make radically different observations appear relevant.",
+    structure:["Hypothesis: all ravens are black","Equivalent form: all non-black things are non-ravens","A green apple is non-black and non-raven","Does observing the apple confirm the raven hypothesis?"],
+    examples:["Scientific sampling","Medical evidence","Machine-learning datasets"],
+    modernRelevance:"Statistics, scientific inference, data selection and AI evaluation",
+    visualMetaphor:"A black raven connected by an impossible evidence line to a green apple", color:"#22d3ee"
+  },
+  {
+    id:"monty-hall", title:"Monty Hall Problem", category:"Psychological", philosopher:"Steve Selvin / Monty Hall",
+    summary:"After one losing door is revealed, switching doors gives a better chance of winning.",
+    description:"Three doors hide one prize and two losses. After your first choice, the host reveals a losing door. Your intuition says the remaining doors are equal; probability says switching is better.",
+    structure:["Choose one of three doors","Host reveals a losing door you did not choose","Two doors remain","Switching doubles the original probability of winning"],
+    examples:["Game shows","Medical testing","Sequential decision-making"],
+    modernRelevance:"Bayesian reasoning, statistics, risk analysis and algorithmic decision systems",
+    visualMetaphor:"Three luminous doors with one probability path changing after revelation", color:"#60a5fa"
+  },
+  {
+    id:"newcomb", title:"Newcomb's Paradox", category:"Ethical", philosopher:"William Newcomb / Robert Nozick",
+    summary:"Should you choose by causal reasoning or by predicting what a nearly perfect predictor already placed in the boxes?",
+    description:"Newcomb's paradox pits dominance reasoning against evidential reasoning. A predictor has filled boxes based on what it expects you will choose, producing incompatible but compelling strategies.",
+    structure:["A highly accurate predictor fills two boxes","You may take one box or both","Taking both dominates after the prediction is fixed","Yet the prediction makes one-boxing appear more likely to win"],
+    examples:["Strategic games","AI prediction markets","Decision-making under predictive models"],
+    modernRelevance:"Game theory, algorithmic prediction, free will and AI forecasting",
+    visualMetaphor:"Two transparent boxes with a prediction signal arriving from the future", color:"#c084fc"
+  },
+  {
+    id:"prisoners", title:"Prisoner's Dilemma", category:"Ethical", philosopher:"Merrill Flood / Melvin Dresher",
+    summary:"Rational self-interest can lead two people to a worse outcome than cooperation.",
+    description:"Two prisoners independently choose cooperation or betrayal. Each has a reason to betray, yet mutual betrayal leaves both worse off than mutual cooperation.",
+    structure:["Each player chooses without knowing the other's choice","Betrayal dominates under standard incentives","Both rationally betray","The collective result is worse than cooperation"],
+    examples:["Arms races","Price competition","Climate agreements","Repeated social cooperation"],
+    modernRelevance:"Game theory, geopolitics, climate policy and multi-agent AI",
+    visualMetaphor:"Two branching decision trees whose best local moves create the worst shared branch", color:"#f97316"
+  },
+  {
+    id:"sleeping-beauty", title:"Sleeping Beauty Problem", category:"Epistemic", philosopher:"Adam Elga",
+    summary:"When should a person assign probability after awakening if memory of previous awakenings is erased?",
+    description:"Sleeping Beauty's probability estimate depends on how one interprets repeated awakenings and evidence that does not distinguish between possible worlds.",
+    structure:["A coin is tossed","Beauty is awakened according to a conditional schedule","Her memory is erased between awakenings","She must estimate the probability of heads"],
+    examples:["Repeated experiments","Sampling problems","Observer selection"],
+    modernRelevance:"Probability theory, anthropic reasoning and AI agent uncertainty",
+    visualMetaphor:"A sleeping chamber splitting into two probabilistic timelines", color:"#818cf8"
+  },
+  {
+    id:"experience-machine", title:"Experience Machine", category:"Ethical", philosopher:"Robert Nozick",
+    summary:"If a machine could guarantee perfect experiences, would you plug in forever?",
+    description:"Nozick's experience machine asks whether pleasure and subjective experience are all that matter. If you refuse, perhaps reality, agency and authenticity have value beyond felt experience.",
+    structure:["Imagine a machine that simulates a perfect life","You can choose any experiences","The simulation feels completely real","Would you sacrifice reality for perfect experience?"],
+    examples:["Virtual reality","Entertainment addiction","Synthetic companionship"],
+    modernRelevance:"VR, generative worlds, AI companions and digital identity",
+    visualMetaphor:"A neural interface suspended between a real horizon and an artificial one", color:"#a78bfa"
+  },
+  {
+    id:"brain-vat", title:"Brain in a Vat", category:"Epistemic", philosopher:"Hilary Putnam / skeptical tradition",
+    summary:"How can you know you are not a brain receiving perfectly simulated signals?",
+    description:"The brain-in-a-vat scenario asks whether experience alone can establish an external world. If every sensory signal were generated artificially, ordinary evidence might look exactly as it does now.",
+    structure:["Imagine a brain isolated from the world","A system supplies perfectly matching sensory signals","Every experience appears normal","What evidence could distinguish simulation from reality?"],
+    examples:["Virtual reality","Dreams","Simulation hypotheses"],
+    modernRelevance:"AI-generated realities, VR, epistemology and digital simulation",
+    visualMetaphor:"A glowing neural network suspended inside a transparent computational vessel", color:"#38bdf8"
+  },
+  {
+    id:"teleporter", title:"Teleportation Paradox", category:"Metaphysical", philosopher:"Derek Parfit",
+    summary:"If a machine destroys your body and recreates an exact copy elsewhere, did you travel?",
+    description:"Teleportation separates physical continuity from psychological continuity. If the replica has your memories and personality, is it you, a successor, or merely a perfect copy?",
+    structure:["A scanner records every physical detail","The original body is destroyed","An exact psychological and physical replica appears elsewhere","Question: survival, death or duplication?"],
+    examples:["Digital backups","Mind uploading","Perfect cloning"],
+    modernRelevance:"AI identity, digital twins, brain emulation and personal data",
+    visualMetaphor:"A human silhouette dissolving into particles and reforming across a luminous gate", color:"#2dd4bf"
+  },
+  {
+    id:"fission", title:"Personal Identity Fission", category:"Metaphysical", philosopher:"Derek Parfit",
+    summary:"If one person becomes two equally continuous successors, which one is the original?",
+    description:"Fission pushes identity beyond simple one-to-one continuity. If two people inherit your memories and character equally, numerical identity cannot straightforwardly select just one.",
+    structure:["One person has a complete psychological history","Two successors inherit that history","Both claim continuity with the original","Ordinary identity becomes inadequate"],
+    examples:["Cloning","Digital copies","Split-brain thought experiments"],
+    modernRelevance:"AI replicas, digital immortality and legal identity",
+    visualMetaphor:"One luminous identity stream branching into two equal paths", color:"#14b8a6"
+  },
+  {
+    id:"twin-earth", title:"Twin Earth", category:"Philosophy of Mind", philosopher:"Hilary Putnam",
+    summary:"If an identical world uses a different substance for water, does the word 'water' mean the same thing?",
+    description:"Twin Earth challenges the idea that meaning exists entirely inside an individual's head. External environment and social usage can partly determine reference.",
+    structure:["Imagine a planet identical to Earth","Its lakes contain a different liquid with the same appearance","People use the word 'water' for that substance","Meaning appears partly dependent on the external world"],
+    examples:["Words and reference","Scientific categories","AI grounding"],
+    modernRelevance:"Language models, semantic grounding and embodied AI",
+    visualMetaphor:"Two mirrored planets with identical labels attached to different liquids", color:"#06b6d4"
+  },
+  {
+    id:"swampman", title:"Swampman", category:"Metaphysical", philosopher:"Donald Davidson",
+    summary:"If a person is accidentally recreated molecule-for-molecule, does the replica have the original person's beliefs?",
+    description:"Davidson's Swampman thought experiment challenges whether meaning and mental content can arise instantaneously from physical duplication without causal history.",
+    structure:["A person is destroyed by lightning","An identical organism appears by chance","It behaves exactly like the original","Does it have genuine beliefs, memories and meaning?"],
+    examples:["Instant cloning","Artificial minds","Digital reconstruction"],
+    modernRelevance:"AI agents, machine consciousness and causal accounts of meaning",
+    visualMetaphor:"A human silhouette reconstructed from a flash of static electricity", color:"#7dd3fc"
+  },
+  {
+    id:"frenchman", title:"The Frenchman and the Englishman", category:"Linguistic", philosopher:"Philosophical language tradition",
+    summary:"Can a statement change truth merely because different speakers use the same words differently?",
+    description:"Indexicals, context and reference can make apparently identical statements behave differently across speakers and situations.",
+    structure:["Two speakers utter the same sentence","Their contexts differ","Reference shifts with speaker or situation","Identical words can carry different truth conditions"],
+    examples:["I / here / now","Legal testimony","Cross-cultural translation"],
+    modernRelevance:"Natural-language AI, translation and conversational agents",
+    visualMetaphor:"Two speech bubbles pointing to different coordinates", color:"#f472b6"
+  },
+  {
+    id:"omnipotence", title:"Omnipotence Paradox", category:"Religious", philosopher:"Medieval theological tradition",
+    summary:"Can an omnipotent being create a stone so heavy that it cannot lift it?",
+    description:"The paradox asks whether unlimited power is coherent when a task is defined to contradict the very concept of unlimited power.",
+    structure:["Define omnipotence as unlimited ability","Ask whether an omnipotent being can create an unliftable object","If yes, lifting it becomes impossible","If no, omnipotence appears limited"],
+    examples:["Divine attributes","Logical possibility","Definitions of power"],
+    modernRelevance:"Philosophy of religion, modal logic and AI discussions of capability",
+    visualMetaphor:"A cosmic hand facing a stone engraved with an impossible instruction", color:"#fbbf24"
+  },
+  {
+    id:"euthyphro", title:"Euthyphro Dilemma", category:"Religious", philosopher:"Plato",
+    summary:"Is something good because the gods command it, or do the gods command it because it is good?",
+    description:"The Euthyphro dilemma separates morality from divine command or makes divine command the source of morality, creating a difficult fork for theories of ethics.",
+    structure:["Assume divine commands determine goodness","Ask whether goodness exists independently","If independent, commands do not create goodness","If not, morality risks becoming arbitrary"],
+    examples:["Divine command theory","Moral realism","Religious ethics"],
+    modernRelevance:"AI ethics, moral foundations and secular versus religious normativity",
+    visualMetaphor:"Two luminous paths branching from one moral question", color:"#f59e0b"
+  },
+  {
+    id:"buridan", title:"Buridan's Ass", category:"Psychological", philosopher:"Jean Buridan",
+    summary:"An equally hungry animal placed exactly between two identical sources of food cannot rationally choose either.",
+    description:"The thought experiment questions whether pure rational calculation can produce action when alternatives have exactly equal reasons.",
+    structure:["Two identical options are equally desirable","No preference distinguishes them","Perfect symmetry removes a deciding reason","The agent risks remaining motionless"],
+    examples:["Decision paralysis","Tie-breaking algorithms","Indecision under symmetry"],
+    modernRelevance:"AI decision policies, optimization and randomization strategies",
+    visualMetaphor:"A symmetric decision node with two identical glowing paths", color:"#84cc16"
+  },
+  {
+    id:"pascal-wager", title:"Pascal's Wager", category:"Existential", philosopher:"Blaise Pascal",
+    summary:"If belief has infinite possible payoff, can practical reason justify believing?",
+    description:"Pascal frames belief as a decision under uncertainty: finite costs may appear negligible beside an infinite possible reward, raising questions about rational choice and belief.",
+    structure:["Consider belief and disbelief","Assign radically different possible outcomes","Compare expected consequences","Ask whether infinite stakes change rational action"],
+    examples:["Risk decisions","Insurance","Existential uncertainty"],
+    modernRelevance:"Decision theory, risk communication and rational choice",
+    visualMetaphor:"A finite coin balanced against an infinite vertical axis", color:"#facc15"
+  },
+  {
+    id:"free-will", title:"Free Will vs Determinism", category:"Metaphysical", philosopher:"Hume / Kant / contemporary philosophy",
+    summary:"If every action has prior causes, in what sense could a person have chosen otherwise?",
+    description:"The problem of free will asks whether causal determination excludes genuine agency or whether freedom can be understood as acting according to one's reasons without external coercion.",
+    structure:["Every event appears to have prior causes","Human choices are events","If causes fix choices, alternatives seem impossible","Yet responsibility presupposes agency"],
+    examples:["Criminal responsibility","Addiction and compulsion","AI autonomy"],
+    modernRelevance:"Neuroscience, law, autonomous systems and moral responsibility",
+    visualMetaphor:"A branching tree whose branches are connected by hidden causal threads", color:"#8b5cf6"
+  },
+  {
+    id:"heaps", title:"Heap / Vagueness Revisited", category:"Linguistic", philosopher:"Ancient Greek logical tradition",
+    summary:"When does a collection stop being a collection after tiny changes?",
+    description:"The heap family shows how concepts with no sharp boundary can defeat apparently valid step-by-step reasoning.",
+    structure:["A clear case exists","A tiny change seems unable to alter the category","Repeat the tiny change many times","The original category eventually disappears"],
+    examples:["Rich and poor","Old and young","Safe and dangerous"],
+    modernRelevance:"Regulation, threshold design, machine classification and policy",
+    visualMetaphor:"A gradient field slowly crossing an invisible semantic boundary", color:"#fb7185"
+  },
+  {
+    id:"gambler", title:"Gambler's Fallacy", category:"Psychological", philosopher:"Probability theory tradition",
+    summary:"After many tails, people often feel heads is 'due' even when trials are independent.",
+    description:"Independent random events can produce streaks without creating a compensating force. Human pattern detection turns random sequences into stories of balance.",
+    structure:["Coin tosses are independent","A streak appears","The mind expects reversal","Probability gives no memory to the coin"],
+    examples:["Casino betting","Lottery numbers","Market timing"],
+    modernRelevance:"Behavioral finance, statistics, gambling psychology and AI forecasting",
+    visualMetaphor:"A probability wheel whose past spins leave no physical trace", color:"#fb923c"
+  },
+  {
+    id:"clustering", title:"Clustering Illusion", category:"Psychological", philosopher:"Daniel Kahneman / Amos Tversky",
+    summary:"Random events often look meaningful because humans are poor at recognizing genuine randomness.",
+    description:"Random processes naturally create clusters. Observers can mistake those clusters for patterns, intention or hidden causes.",
+    structure:["Generate a random sequence","Clusters naturally appear","Observer searches for explanation","Noise is interpreted as signal"],
+    examples:["Sports streaks","Stock charts","Coin-toss patterns"],
+    modernRelevance:"Data science, anomaly detection, AI pattern recognition and misinformation",
+    visualMetaphor:"A field of random points forming accidental constellations", color:"#38bdf8"
+  },
+  {
+    id:"braess", title:"Braess's Paradox", category:"Political", philosopher:"Dietrich Braess",
+    summary:"Adding a road to a network can make everyone's journey slower.",
+    description:"A seemingly beneficial new connection can worsen the equilibrium of a network because individually rational route choices interact.",
+    structure:["A traffic network has an equilibrium","Add a seemingly useful shortcut","Drivers change routes independently","Total travel time can increase"],
+    examples:["Road planning","Internet routing","Supply chains"],
+    modernRelevance:"Network science, smart cities, distributed computing and congestion pricing",
+    visualMetaphor:"A glowing network gaining one edge while every route turns red", color:"#ef4444"
+  },
+  {
+    id:"simpson", title:"Simpson's Paradox", category:"Epistemic", philosopher:"Edward Simpson",
+    summary:"A trend can appear in several groups but reverse when the groups are combined.",
+    description:"Aggregated data can tell a different story from every subgroup because a hidden variable changes the weighting of observations.",
+    structure:["Compare two groups","Each subgroup favors one outcome","Combine the groups","The overall trend reverses"],
+    examples:["Medical studies","University admissions","Hiring statistics"],
+    modernRelevance:"Data analytics, causal inference, dashboards and AI fairness",
+    visualMetaphor:"Two downward graphs merging into one upward graph", color:"#22c55e"
+  },
+  {
+    id:"monty-variation", title:"Bertrand's Box / Three Boxes", category:"Logical", philosopher:"Joseph Bertrand",
+    summary:"Random selection can hide conditional information that radically changes the odds.",
+    description:"Bertrand's probability puzzles show how the procedure used to obtain information can matter as much as the information itself.",
+    structure:["Construct apparently symmetric cases","Reveal information conditionally","The cases are no longer equally likely","The sampling mechanism changes the answer"],
+    examples:["Bayesian diagnosis","Randomized experiments","Selection bias"],
+    modernRelevance:"Statistics, machine learning and experimental design",
+    visualMetaphor:"Three boxes whose probabilities rearrange when one is opened", color:"#14b8a6"
+  },
+  {
+    id:"doomsday", title:"Doomsday Argument", category:"Temporal", philosopher:"Brandon Carter",
+    summary:"Can your position in the sequence of all humans tell you something about humanity's future?",
+    description:"The Doomsday argument uses an observer's apparently ordinary birth rank to reason about the possible total number of humans who will ever live.",
+    structure:["Imagine all humans ordered by birth","You observe your own approximate position","Assume your position is not unusually special","Infer something about the possible total population"],
+    examples:["Population forecasts","Anthropic reasoning","Longevity predictions"],
+    modernRelevance:"Longtermism, existential risk and Bayesian anthropic reasoning",
+    visualMetaphor:"A timeline extending into darkness with one illuminated observer marker", color:"#6366f1"
+  },
+  {
+    id:"fermi", title:"Fermi Paradox", category:"Existential", philosopher:"Enrico Fermi",
+    summary:"If intelligent extraterrestrial life should be common, why have we seen no clear evidence of it?",
+    description:"The Fermi paradox contrasts the enormous number of potentially habitable worlds with the absence of unambiguous signs of advanced extraterrestrial civilizations.",
+    structure:["The universe contains vast numbers of stars","Many systems could support life","Civilizations might have had enormous time to spread","Yet the sky remains conspicuously quiet"],
+    examples:["Drake equation","Great Filter","Technological civilizations"],
+    modernRelevance:"Astrobiology, existential risk and humanity's cosmic future",
+    visualMetaphor:"A dense star field interrupted by one silent radio signal", color:"#60a5fa"
+  },
+  {
+    id:"bootstrap", title:"Bootstrap Paradox", category:"Temporal", philosopher:"Robert Heinlein / time-travel tradition",
+    summary:"Can an object or idea exist in a time loop without ever having an original source?",
+    description:"A traveler receives a book from the future, publishes it in the past, and later receives the same book. Where did the information originate?",
+    structure:["An object or idea travels backward in time","It becomes the cause of its own earlier existence","The loop closes","No original source can be identified"],
+    examples:["Time-loop inventions","Future knowledge","Predestination narratives"],
+    modernRelevance:"Causal models, time-travel physics and information theory",
+    visualMetaphor:"A glowing object moving around a closed temporal ring", color:"#c084fc"
+  },
+  {
+    id:"predestination", title:"Predestination Paradox", category:"Temporal", philosopher:"Time-travel thought-experiment tradition",
+    summary:"Trying to prevent an event may become the very cause that makes it happen.",
+    description:"A traveler goes back to prevent an event and unknowingly performs the actions that guarantee it. The attempt to change history becomes part of history.",
+    structure:["A future event motivates intervention","Traveler enters the past","Intervention creates the conditions for the event","The attempt to prevent it ensures it"],
+    examples:["Time-travel fiction","Causal loops","Self-fulfilling predictions"],
+    modernRelevance:"Causal inference and feedback systems",
+    visualMetaphor:"A timeline whose two ends meet at the same event", color:"#a855f7"
+  },
+  {
+    id:"unexpected-utility", title:"The Utility Monster", category:"Ethical", philosopher:"Robert Nozick",
+    summary:"What if one being gains vastly more utility from every resource than everyone else?",
+    description:"The utility monster challenges utilitarian aggregation by imagining a being whose capacity for pleasure dwarfs that of everyone else.",
+    structure:["Assume utility can be compared between people","Imagine one being with extreme utility capacity","Giving resources to it maximizes aggregate utility","Intuition resists sacrificing everyone else"],
+    examples:["Resource allocation","AI optimization","Population ethics"],
+    modernRelevance:"AI alignment, welfare economics and optimization objectives",
+    visualMetaphor:"One expanding utility curve consuming an entire finite resource field", color:"#f43f5e"
+  },
+  {
+    id:"repugnant-conclusion", title:"Repugnant Conclusion", category:"Ethical", philosopher:"Derek Parfit",
+    summary:"Could a very large population living barely worthwhile lives be judged better than a smaller population living excellent lives?",
+    description:"Population ethics creates tension between total welfare and quality of life when population size can vary.",
+    structure:["Compare a small population with excellent lives","Gradually increase population while lowering average welfare","Total welfare can continue rising","Eventually an enormous barely-good population appears preferable"],
+    examples:["Future population policy","Climate trade-offs","Resource distribution"],
+    modernRelevance:"Longtermism, AI ethics and global policy",
+    visualMetaphor:"A small bright city transforming into an immense dim horizon", color:"#fb7185"
+  },
+  {
+    id:"nonidentity", title:"Non-Identity Problem", category:"Ethical", philosopher:"Derek Parfit",
+    summary:"How can a decision harm future people if the decision changes who will exist?",
+    description:"Some choices affect the identities of future people rather than merely their circumstances. A harmful policy may produce people whose lives are still worth living, complicating the idea of harm.",
+    structure:["A present choice changes future conditions","That choice also changes who will be born","The affected person would not exist under the alternative","Can the person say the decision harmed them?"],
+    examples:["Climate policy","Reproductive ethics","Intergenerational justice"],
+    modernRelevance:"Climate change, population ethics and long-term governance",
+    visualMetaphor:"Two future timelines containing entirely different faces", color:"#2dd4bf"
+  },
+  {
+    id:"veils", title:"Veil of Ignorance", category:"Political", philosopher:"John Rawls",
+    summary:"What principles would you choose if you did not know your own place in society?",
+    description:"Rawls asks decision-makers to design social rules behind a veil that hides their class, wealth, gender, abilities and status.",
+    structure:["Imagine designing society's rules","Remove knowledge of your future social position","Choose principles without knowing whether you benefit","Evaluate whether the resulting system is fair"],
+    examples:["Constitutions","Tax policy","Healthcare allocation"],
+    modernRelevance:"Algorithmic fairness, public policy and institutional design",
+    visualMetaphor:"Anonymous silhouettes designing a society behind translucent glass", color:"#06b6d4"
+  },
+  {
+    id:"scapegoat", title:"Scapegoat Mechanism", category:"Political", philosopher:"René Girard",
+    summary:"Can a community restore unity by collectively blaming one person?",
+    description:"Girard's mimetic theory describes how rivalry can converge on a victim, temporarily restoring social order while concealing the mechanism that produced the conflict.",
+    structure:["Desire spreads through imitation","Rivalry increases","A group converges on a single victim","Violence temporarily restores unity"],
+    examples:["Political blame","Moral panics","Online pile-ons"],
+    modernRelevance:"Social media dynamics, propaganda and collective behavior",
+    visualMetaphor:"Many identical arrows converging on one illuminated silhouette", color:"#ef4444"
+  },
+  {
+    id:"abdication", title:"The Prisoner's Dilemma of Nations", category:"Political", philosopher:"Thomas Hobbes / Game Theory",
+    summary:"Two states can rationally prepare for conflict even when both would prefer peace.",
+    description:"Security decisions can create a feedback loop: each side arms because it fears the other, making the other side more fearful in return.",
+    structure:["Both actors prefer peace","Each fears the other's intentions","Defensive action appears individually rational","Mutual escalation produces the feared outcome"],
+    examples:["Arms races","Cybersecurity","Trade retaliation"],
+    modernRelevance:"Geopolitics, cyber conflict and AI arms races",
+    visualMetaphor:"Two mirrored defense systems powering up in response to each other", color:"#f97316"
+  },
+  {
+    id:"avicenna", title:"Avicenna's Flying Man", category:"Eastern Philosophy", philosopher:"Ibn Sina (Avicenna)",
+    summary:"Could a person suspended without sensory contact still be aware of their own existence?",
+    description:"Avicenna imagines a person created fully formed and suspended in air, deprived of sensory contact. The thought experiment argues that self-awareness may not depend entirely on bodily sensation.",
+    structure:["Imagine a person isolated from all sensory input","Remove visual, tactile and auditory contact","Ask whether self-awareness remains","The self appears as an immediate datum"],
+    examples:["Self-awareness","Embodied cognition","Meditation and introspection"],
+    modernRelevance:"Consciousness research, phenomenology and artificial self-models",
+    visualMetaphor:"A luminous human silhouette floating inside an empty sensory void", color:"#22d3ee"
+  },
+  {
+    id:"ghazali", title:"Al-Ghazali's Causal Puzzle", category:"Eastern Philosophy", philosopher:"Abu Hamid al-Ghazali",
+    summary:"When one event follows another, do we observe causation itself or only habitual succession?",
+    description:"Al-Ghazali questioned whether fire necessarily causes cotton to burn or whether causal necessity is something we infer from regular succession.",
+    structure:["Fire repeatedly precedes burning","We observe succession","Necessity itself is not directly seen","Causation becomes a philosophical question rather than a simple visual fact"],
+    examples:["Natural laws","Miracles","Scientific explanation"],
+    modernRelevance:"Causal inference, philosophy of science and machine learning",
+    visualMetaphor:"A flame separated from its expected effect by a thin conceptual gap", color:"#fb923c"
+  },
+  {
+    id:"flying-man-advaita", title:"The Witness and the World", category:"Eastern Philosophy", philosopher:"Advaita Vedānta tradition",
+    summary:"If the witness of experience is distinct from every changing experience, what exactly is the self?",
+    description:"Advaita inquiry repeatedly asks whether the changing body, sensations, thoughts and roles can be identical with the witnessing awareness that notices them.",
+    structure:["Observe the body as an object of awareness","Observe sensations and thoughts as changing","Ask what remains as the witness","The distinction between self and experience becomes unstable"],
+    examples:["Meditation","Self-inquiry","Observer consciousness"],
+    modernRelevance:"Consciousness studies, contemplative science and identity models",
+    visualMetaphor:"A still luminous point surrounded by changing concentric worlds", color:"#a78bfa"
+  },
+  {
+    id:"neti-neti", title:"Neti Neti — The Negative Self", category:"Eastern Philosophy", philosopher:"Upanishadic tradition",
+    summary:"If the self is not the body, not the mind and not any object of awareness, what remains?",
+    description:"The method of neti neti ('not this, not this') approaches identity by removing everything that can be observed or conceptualized.",
+    structure:["Identify something as 'me'","Notice that it can be observed or changed","Reject it as the final identity","Continue until ordinary descriptions of self become inadequate"],
+    examples:["Body","Thoughts","Roles","Memories"],
+    modernRelevance:"Meditation, phenomenology and philosophical theories of self",
+    visualMetaphor:"Layers of identity peeling away toward an empty luminous center", color:"#c084fc"
+  },
+  {
+    id:"nagarjuna", title:"Nagarjuna's Catuskoti", category:"Eastern Philosophy", philosopher:"Nāgārjuna",
+    summary:"Can a proposition be true, false, both, or neither without fitting neatly into any one of the four?",
+    description:"Madhyamaka analysis challenges the tendency to treat concepts as possessing independent, fixed essence. The catuskoti examines four logical possibilities and questions the assumptions behind each.",
+    structure:["Consider a proposition","Examine true","Examine false","Examine both and neither"],
+    examples:["Self and emptiness","Causation","Existence and non-existence"],
+    modernRelevance:"Logic, ontology, philosophy of language and conceptual analysis",
+    visualMetaphor:"Four paths leaving one central question and curving back toward emptiness", color:"#67e8f9"
+  },
+  {
+    id:"two-truths", title:"Two Truths", category:"Eastern Philosophy", philosopher:"Madhyamaka Buddhist tradition",
+    summary:"How can something be conventionally real while lacking ultimate independent existence?",
+    description:"The two-truths framework distinguishes conventional truth, where language and ordinary distinctions function, from ultimate analysis, where independent essence cannot be found.",
+    structure:["Use ordinary concepts successfully","Analyze them for independent essence","The concept works conventionally","Ultimate analysis dissolves its independent status"],
+    examples:["Self","Cause and effect","Objects and labels"],
+    modernRelevance:"Ontology, language, cognitive science and systems thinking",
+    visualMetaphor:"A city visible in daylight and dissolving into a network of relations under a second lens", color:"#14b8a6"
+  },
+  {
+    id:"buddha-arrow", title:"The Second Arrow", category:"Eastern Philosophy", philosopher:"Early Buddhist tradition",
+    summary:"Pain is one arrow; the mind's resistance can become a second arrow.",
+    description:"The Buddhist second-arrow teaching distinguishes unavoidable pain from the additional suffering created by craving, resistance and mental proliferation.",
+    structure:["An unpleasant event occurs","Raw pain is experienced","The mind adds judgment and resistance","Secondary suffering compounds the first"],
+    examples:["Physical pain","Insult and resentment","Anxiety about anxiety"],
+    modernRelevance:"Psychology, mindfulness, pain science and emotional regulation",
+    visualMetaphor:"Two arrows crossing the same target, one physical and one conceptual", color:"#f59e0b"
+  },
+  {
+    id:"buddha-raft", title:"The Raft Parable", category:"Eastern Philosophy", philosopher:"Early Buddhist tradition",
+    summary:"If a teaching is a raft for crossing a river, should you carry the raft after reaching the shore?",
+    description:"The raft simile questions attachment even to useful doctrines. A method can be valuable precisely because it is eventually relinquished.",
+    structure:["Use a raft to cross dangerous water","The raft is essential during crossing","After reaching shore, carrying it becomes unnecessary","Useful concepts can become burdens when clung to"],
+    examples:["Meditation techniques","Philosophical systems","Rules and rituals"],
+    modernRelevance:"Learning systems, ideology, productivity methods and intellectual flexibility",
+    visualMetaphor:"A raft left at the shore while the traveler walks toward open ground", color:"#2dd4bf"
+  },
+  {
+    id:"butterfly-dream", title:"Zhuangzi's Butterfly Dream", category:"Eastern Philosophy", philosopher:"Zhuangzi",
+    summary:"If you dream you are a butterfly, how certain are you that you are now a human dreaming?",
+    description:"Zhuangzi's famous dream destabilizes the distinction between waking identity and dream identity, inviting questions about transformation and certainty.",
+    structure:["Zhuangzi dreams he is a butterfly","The dream is vivid and complete","He wakes as Zhuangzi","Was a human dreaming a butterfly, or a butterfly dreaming Zhuangzi?"],
+    examples:["Dreams","Virtual worlds","Changing identity"],
+    modernRelevance:"Virtual reality, simulation theory and consciousness",
+    visualMetaphor:"A human silhouette and butterfly exchanging places inside a dream loop", color:"#f472b6"
+  },
+  {
+    id:"zhuangzi-usefulness", title:"The Useless Tree", category:"Eastern Philosophy", philosopher:"Zhuangzi",
+    summary:"Can being considered useless become the very thing that allows something to survive?",
+    description:"Zhuangzi's tree is too twisted for timber and therefore escapes the axe. What looks like uselessness from one perspective becomes survival from another.",
+    structure:["A tree fails the standard of usefulness","Woodcutters ignore it","Its apparent uselessness protects it","The standard of value becomes the source of danger"],
+    examples:["Non-productive time","Alternative lifestyles","Systems that resist optimization"],
+    modernRelevance:"AI optimization, ecological thinking and critiques of productivity",
+    visualMetaphor:"A crooked tree glowing while perfectly straight trees disappear into the forest", color:"#84cc16"
+  },
+  {
+    id:"wu-wei", title:"Wu Wei Paradox", category:"Eastern Philosophy", philosopher:"Laozi / Daoist tradition",
+    summary:"How can deliberate non-forcing produce more effective action than forceful control?",
+    description:"Daoist wu wei is often translated as effortless or non-coercive action. The paradox is that cultivating non-forcing is itself a disciplined practice.",
+    structure:["Direct control appears efficient","Force creates resistance","Non-forcing follows the structure of the situation","Action becomes effective by not fighting the grain"],
+    examples:["Leadership","Martial arts","Water shaping stone"],
+    modernRelevance:"Organizational design, adaptive systems and human-computer interaction",
+    visualMetaphor:"Water flowing around obstacles while reaching the same destination", color:"#38bdf8"
+  },
+  {
+    id:"dao-name", title:"The Dao That Can Be Named", category:"Eastern Philosophy", philosopher:"Laozi",
+    summary:"If the ultimate Dao can be completely named, can that name still capture what the Dao is?",
+    description:"The opening tension of the Dao De Jing questions whether ultimate reality can be fully captured by the concepts used to describe it.",
+    structure:["Attempt to name ultimate reality","A name creates a conceptual boundary","The boundary distinguishes and limits","What exceeds the name remains unnamed"],
+    examples:["Words and reality","Maps and territories","Definitions of consciousness"],
+    modernRelevance:"AI language models, semantic compression and philosophy of language",
+    visualMetaphor:"A word label dissolving into an infinite landscape", color:"#67e8f9"
+  },
+  {
+    id:"jain-syadvada", title:"Syādvāda — The Many-Sided Truth", category:"Eastern Philosophy", philosopher:"Jain philosophical tradition",
+    summary:"Can a proposition be true from one standpoint and false from another without either view being complete?",
+    description:"Jain anekāntavāda emphasizes the many-sidedness of reality. Syādvāda qualifies claims by standpoint rather than treating a single perspective as exhaustive.",
+    structure:["Observe an object from one standpoint","A claim appears true","Change the standpoint","The claim requires qualification rather than absolute certainty"],
+    examples:["The blind men and elephant","Scientific models","Conflicting eyewitness accounts"],
+    modernRelevance:"Pluralism, epistemic humility, multi-perspective AI and conflict resolution",
+    visualMetaphor:"Several geometric projections converging on one multidimensional object", color:"#facc15"
+  },
+  {
+    id:"blind-men-elephant", title:"Blind Men and the Elephant", category:"Eastern Philosophy", philosopher:"Indian parable tradition",
+    summary:"Can several incomplete descriptions of the same reality all be correct yet mutually contradictory?",
+    description:"Different observers touch different parts of an elephant and describe rope, wall, spear or tree. Each report is locally accurate but globally incomplete.",
+    structure:["Each observer encounters one part","Each forms a confident description","Descriptions conflict","A larger reality contains each partial perspective"],
+    examples:["Scientific models","Political viewpoints","Interdisciplinary research"],
+    modernRelevance:"Data fusion, AI multimodality and epistemic humility",
+    visualMetaphor:"Many colored beams illuminating different parts of one hidden form", color:"#f59e0b"
+  },
+  {
+    id:"maya", title:"Māyā and Appearance", category:"Eastern Philosophy", philosopher:"Vedānta traditions",
+    summary:"If appearance is experientially real but not ultimately what it seems, what status does reality have?",
+    description:"Vedāntic discussions of māyā explore the gap between ordinary appearance and ultimate understanding, without reducing everyday experience to simple nonexistence.",
+    structure:["An appearance is experienced","It seems independently real","Deeper inquiry changes how it is interpreted","The relation between appearance and reality becomes the question"],
+    examples:["Rope and snake","Dream imagery","Perceptual illusions"],
+    modernRelevance:"Virtual reality, perception and cognitive construction",
+    visualMetaphor:"A rope casting the projection of a snake that dissolves under closer inspection", color:"#c084fc"
+  },
+  {
+    id:"rope-snake", title:"Rope and Snake", category:"Eastern Philosophy", philosopher:"Advaita Vedānta tradition",
+    summary:"A rope mistaken for a snake is terrifying until better knowledge changes the object without changing the rope.",
+    description:"The rope-snake example illustrates how perception, ignorance and interpretation can transform experience while the underlying object remains unchanged.",
+    structure:["Low light obscures an object","Mind interprets it as a snake","Fear follows the interpretation","Light reveals a rope and changes the experience"],
+    examples:["Perceptual illusion","Rumors","Anxiety-driven interpretation"],
+    modernRelevance:"Cognitive bias, misinformation and predictive perception",
+    visualMetaphor:"A coiled rope whose shadow briefly forms a serpent", color:"#a78bfa"
+  },
+  {
+    id:"selfless-self", title:"The Selfless Self", category:"Eastern Philosophy", philosopher:"Buddhist tradition",
+    summary:"If no permanent self can be found, who experiences, remembers and acts?",
+    description:"Buddhist analysis of the aggregates challenges the idea of a permanent independent self while still accounting for continuity, responsibility and experience.",
+    structure:["Examine body, sensation, perception, formations and consciousness","Each changes over time","No permanent owner is isolated","Yet causal continuity persists"],
+    examples:["Personal identity","Memory","Moral responsibility"],
+    modernRelevance:"Neuroscience, cognitive science and theories of personal identity",
+    visualMetaphor:"Five flowing streams forming the temporary outline of a person", color:"#2dd4bf"
+  },
+  {
+    id:"indras-net", title:"Indra's Net", category:"Eastern Philosophy", philosopher:"Huayan Buddhist tradition",
+    summary:"If every jewel reflects every other jewel, where does one thing end and another begin?",
+    description:"Indra's Net imagines an infinite network of jewels, each reflecting every other. The metaphor challenges isolated substances and emphasizes relational existence.",
+    structure:["Imagine an infinite web of jewels","Every jewel reflects all others","Each reflection contains further reflections","No element exists independently of the network"],
+    examples:["Ecology","Social networks","Complex systems"],
+    modernRelevance:"Network science, distributed systems and systems philosophy",
+    visualMetaphor:"An infinite lattice of luminous nodes reflecting one another", color:"#22d3ee"
+  },
+  {
+    id:"dependent-origination", title:"Dependent Origination", category:"Eastern Philosophy", philosopher:"Buddhist tradition",
+    summary:"If each condition depends on other conditions, where can an independent first cause be found?",
+    description:"Dependent origination presents phenomena as arising through conditions rather than from isolated permanent essences.",
+    structure:["Identify an event","Trace its conditions","Each condition depends on others","The search for an independent isolated origin keeps receding"],
+    examples:["Emotion","Social conflict","Ecological systems"],
+    modernRelevance:"Systems thinking, causal graphs and networked causality",
+    visualMetaphor:"A chain of luminous nodes with every link branching into further causes", color:"#14b8a6"
+  },
+  {
+    id:"sufi-lover", title:"The Lover and the Beloved", category:"Eastern Philosophy", philosopher:"Sufi mystical tradition",
+    summary:"If the seeker seeks union with the beloved, what happens to the distinction between seeker and sought?",
+    description:"Sufi poetry repeatedly plays with the paradox that the search for the divine can dissolve the very identity of the seeker who began the search.",
+    structure:["A seeker distinguishes self from beloved","The seeker moves toward union","The distinction between seeker and beloved weakens","The one who seeks may be transformed by the search"],
+    examples:["Mystical poetry","Devotional practice","Self-transcendence"],
+    modernRelevance:"Identity, contemplative psychology and transformative learning",
+    visualMetaphor:"Two luminous circles merging until their boundary disappears", color:"#f472b6"
+  },
+  {
+    id:"ghazali-doubt", title:"Al-Ghazali's Skeptical Crisis", category:"Eastern Philosophy", philosopher:"Abu Hamid al-Ghazali",
+    summary:"If every source of knowledge can be doubted, what finally restores confidence in knowledge?",
+    description:"Al-Ghazali's intellectual crisis explores radical doubt about sensory and rational certainty before a transformed mode of trust and understanding.",
+    structure:["Doubt sensory perception","Question rational inference","Notice that doubt itself requires standards","Ask what kind of certainty can survive radical skepticism"],
+    examples:["Dream skepticism","Mathematical certainty","Religious knowledge"],
+    modernRelevance:"Epistemology, AI uncertainty and foundations of knowledge",
+    visualMetaphor:"A staircase of certainty disappearing beneath each step as it is questioned", color:"#8b5cf6"
+  },
+  {
+    id:"four-causes", title:"Four Causes", category:"Eastern Philosophy", philosopher:"Aristotle",
+    summary:"Can one explanation capture material, formal, efficient and final causes at once?",
+    description:"Aristotle's four causes reveal that asking 'why?' can mean several different explanatory questions rather than one.",
+    structure:["Identify what something is made of","Ask what form it has","Ask what produced it","Ask what purpose or end it serves"],
+    examples:["A statue","A house","A biological organ"],
+    modernRelevance:"Causal modeling, engineering and multidisciplinary explanation",
+    visualMetaphor:"Four colored beams converging on one object from different explanatory directions", color:"#f59e0b"
+  }
   ],
   "categories": {
     "Logical": "Paradoxes involving contradictions in reasoning or formal logic",
@@ -262,6 +835,17 @@ const visualIcons = {
   'grandfather': '<span class="glyph glyph--grandfather">⏳</span>',
   'tolerance': '<span class="glyph glyph--tolerance">⚖</span>'
 };
+
+
+const extendedVisualIcons = {
+  liar:"∞", theseus:"◈", trolley:"⚡", mary:"●", "chinese-room":"Ψ", russell:"⟳", zeno:"½", choice:"◇", grandfather:"⏳", tolerance:"⚖",
+  sorites:"∴", barber:"⌁", berry:"≋", grelling:"≠", curry:"⊢", pinocchio:"↻", "unexpected-exam":"!", crocodile:"◌", raven:"◐", "monty-hall":"3", newcomb:"▣", prisoners:"⇄", "sleeping-beauty":"☾", "experience-machine":"◉", "brain-vat":"Ψ", teleporter:"⇥", fission:"⑂", "twin-earth":"◎", swampman:"✦", frenchman:"Aa", omnipotence:"∞", euthyphro:"?", buridan:"⇆", "pascal-wager":"∞", "free-will":"⑂", heaps:"≈", gambler:"⊙", clustering:"⁙", braess:"⌁", simpson:"∿", "monty-variation":"◇", doomsday:"⌛", fermi:"✦", bootstrap:"⟳", predestination:"↺", "unexpected-utility":"Σ", "repugnant-conclusion":"∑", nonidentity:"∅", veils:"◫", scapegoat:"→", abdication:"⚔",
+  avicenna:"◌", ghazali:"∴", "flying-man-advaita":"ॐ", "neti-neti":"∅", nagarjuna:"◌", "two-truths":"☯", "buddha-arrow":"⇢", "buddha-raft":"⌁", "butterfly-dream":"蝶", "zhuangzi-usefulness":"木", "wu-wei":"≈", "dao-name":"道", "jain-syadvada":"∞", "blind-men-elephant":"◈", maya:"✧", "rope-snake":"∿", "selfless-self":"∅", "indras-net":"✺", "dependent-origination":"⛓", "sufi-lover":"♥", "ghazali-doubt":"?", "four-causes":"✣"
+};
+Object.entries(extendedVisualIcons).forEach(([id,symbol]) => {
+  const cls = id.replace(/[^a-z0-9]+/g,"-");
+  visualIcons[id] = '<span class="glyph glyph--'+cls+'">'+symbol+'</span>';
+});
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
