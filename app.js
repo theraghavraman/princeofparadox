@@ -581,15 +581,7 @@ const paradoxesData = {
     modernRelevance:"Social media dynamics, propaganda and collective behavior",
     visualMetaphor:"Many identical arrows converging on one illuminated silhouette", color:"#ef4444"
   },
-  {
-    id:"abdication", title:"The Prisoner's Dilemma of Nations", category:"Political", philosopher:"Thomas Hobbes / Game Theory",
-    summary:"Two states can rationally prepare for conflict even when both would prefer peace.",
-    description:"Security decisions can create a feedback loop: each side arms because it fears the other, making the other side more fearful in return.",
-    structure:["Both actors prefer peace","Each fears the other's intentions","Defensive action appears individually rational","Mutual escalation produces the feared outcome"],
-    examples:["Arms races","Cybersecurity","Trade retaliation"],
-    modernRelevance:"Geopolitics, cyber conflict and AI arms races",
-    visualMetaphor:"Two mirrored defense systems powering up in response to each other", color:"#f97316"
-  },
+
   {
     id:"avicenna", title:"Avicenna's Flying Man", category:"Eastern Philosophy", philosopher:"Ibn Sina (Avicenna)",
     summary:"Could a person suspended without sensory contact still be aware of their own existence?",
