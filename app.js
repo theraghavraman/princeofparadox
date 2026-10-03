@@ -462,11 +462,11 @@ function generateInteractiveSection(paradox) {
   if (paradox.id === 'trolley') {
     return `
       <div class="paradox-section">
-        <h3 class="paradox-section__title">🚃 Interactive Scenario</h3>
+        <h3 class="paradox-section__title">⚡ Interactive Scenario</h3>
         <div class="trolley-interactive" id="trolleyInteractive">
           <div class="trolley-scenario">
             <div class="trolley-track">
-              <div class="trolley-cart">🚃</div>
+              <div class="trolley-cart"><span class="mini-glyph">⚡</span></div>
               <div class="trolley-people main-track">👥👥👥👥👥</div>
               <div class="trolley-people side-track">👤</div>
               <button class="trolley-lever" id="trolleyLever" onclick="animateTrolley()">Switch Track</button>
@@ -492,7 +492,7 @@ function generateInteractiveSection(paradox) {
         <div class="mary-room" id="maryRoom">
           <div class="room-container">
             <div class="room black-white" id="maryRoomVisual">
-              <div class="room-mary">👩‍🔬</div>
+              <div class="room-mary"><span class="character-mark">M</span></div>
               <div class="room-objects">📚📺🖥️</div>
               <button class="btn btn--primary room-button" onclick="showColor()">Show Mary a Red Apple</button>
               <div class="color-revelation hidden" id="colorRevelation">
@@ -509,7 +509,7 @@ function generateInteractiveSection(paradox) {
   if (paradox.id === 'theseus') {
     return `
       <div class="paradox-section">
-        <h3 class="paradox-section__title">🚢 Ship Transformation</h3>
+        <h3 class="paradox-section__title">◈ Ship Transformation</h3>
         <div class="visual-metaphor">
           <button class="btn btn--primary" onclick="animateShipReplacement()">Replace Ship Parts</button>
           <p id="shipStatus">Original ship with all original parts</p>
