@@ -251,16 +251,16 @@ let filteredParadoxes = paradoxesData.paradoxes;
 
 // Visual metaphor icons
 const visualIcons = {
-  'liar': '∞',
-  'theseus': '🚢',
-  'trolley': '🚃',
-  'mary': '👩‍🔬',
-  'chinese-room': '🏠',
-  'russell': '🔄',
-  'zeno': '🏃‍♂️',
-  'choice': '🚪',
-  'grandfather': '⏰',
-  'tolerance': '⚖️'
+  'liar': '<span class="glyph glyph--liar">∞</span>',
+  'theseus': '<span class="glyph glyph--theseus">◈</span>',
+  'trolley': '<span class="glyph glyph--trolley">⚡</span>',
+  'mary': '<span class="glyph glyph--mary">●</span>',
+  'chinese-room': '<span class="glyph glyph--chinese">Ψ</span>',
+  'russell': '<span class="glyph glyph--russell">⟳</span>',
+  'zeno': '<span class="glyph glyph--zeno">½</span>',
+  'choice': '<span class="glyph glyph--choice">◇</span>',
+  'grandfather': '<span class="glyph glyph--grandfather">⏳</span>',
+  'tolerance': '<span class="glyph glyph--tolerance">⚖</span>'
 };
 
 // Initialize the application
@@ -310,7 +310,7 @@ function renderParadoxGrid() {
         </button>
       </div>
       <div class="paradox-card__philosopher">${paradox.philosopher}</div>
-      <div class="paradox-card__visual">${visualIcons[paradox.id] || '🤔'}</div>
+      <div class="paradox-card__visual">${visualIcons[paradox.id] || '<span class="glyph">?</span>'}</div>
       <div class="paradox-card__summary">${paradox.summary}</div>
     </div>
   `).join('');
@@ -377,7 +377,7 @@ function generateParadoxDetailHTML(paradox) {
     </div>
     
     <div class="paradox-section">
-      <h3 class="paradox-section__title">🔍 Logical Structure</h3>
+      <h3 class="paradox-section__title">∴ Logical Structure</h3>
       <div class="paradox-section__content">
         ${paradox.structure.map((step, index) => `
           <div class="structure-step">
@@ -389,11 +389,11 @@ function generateParadoxDetailHTML(paradox) {
     </div>
     
     <div class="paradox-section">
-      <h3 class="paradox-section__title">💡 Examples</h3>
+      <h3 class="paradox-section__title">◇ Examples</h3>
       <div class="paradox-section__content">
         ${paradox.examples.map(example => `
           <div class="example-item">
-            <div class="example-icon">💭</div>
+            <div class="example-icon">→</div>
             <div>${example}</div>
           </div>
         `).join('')}
@@ -401,10 +401,10 @@ function generateParadoxDetailHTML(paradox) {
     </div>
     
     <div class="paradox-section">
-      <h3 class="paradox-section__title">🌐 Modern Relevance</h3>
+      <h3 class="paradox-section__title">⊕ Modern Relevance</h3>
       <div class="paradox-section__content">
         <div class="relevance-item">
-          <div class="relevance-icon">🔬</div>
+          <div class="relevance-icon">⊕</div>
           <div>${paradox.modernRelevance}</div>
         </div>
       </div>
@@ -413,7 +413,7 @@ function generateParadoxDetailHTML(paradox) {
     ${generateInteractiveSection(paradox)}
     
     <div class="quiz-section">
-      <h3 class="paradox-section__title">🤔 Reflection Question</h3>
+      <h3 class="paradox-section__title">? Reflection Question</h3>
       <div class="quiz-question">${quizQuestions.question}</div>
       <div class="quiz-options">
         ${quizQuestions.options.map((option, index) => `
@@ -437,21 +437,21 @@ function generateVisualMetaphor(paradox) {
         ${Array(5).fill(0).map((_, i) => `<div class="ship-part" id="part-${i}"></div>`).join('')}
       </div>`;
     case 'trolley':
-      return '🚃➡️👥👥👥👥👥<br>⬇️<br>👤';
+      return '<div class="glyph glyph--trolley">⚡</div>';
     case 'mary':
-      return '⬜⬜⬜⬜⬜<br>⬜👩‍🔬⬜<br>⬜⬜🔴⬜⬜';
+      return '<div class="glyph glyph--mary">●</div>';
     case 'chinese-room':
-      return '📥中文➡️🏠➡️中文📤<br>❓理解❓';
+      return '<div class="glyph glyph--chinese">Ψ</div>';
     case 'russell':
-      return '🔄{A ∉ A} ∈ ?';
+      return '<div class="glyph glyph--russell">⟳</div>';
     case 'zeno':
-      return '🏃‍♂️...½...¼...⅛...🐢';
+      return '<div class="glyph glyph--zeno">½</div>';
     case 'choice':
-      return '🚪🚪🚪🚪🚪<br>😵‍💫';
+      return '<div class="glyph glyph--choice">◇</div>';
     case 'grandfather':
-      return '👴❌➡️👶❌➡️👤❌';
+      return '<div class="glyph glyph--grandfather">⏳</div>';
     case 'tolerance':
-      return '⚖️📊📉';
+      return '<div class="glyph glyph--tolerance">⚖</div>';
     default:
       return visualIcons[paradox.id] || '🤔';
   }
