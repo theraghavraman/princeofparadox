@@ -745,21 +745,55 @@ Object.entries(extendedVisualIcons).forEach(([id,symbol]) => {
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
-  renderParadoxGrid();
-  setupEventListeners();
-  updateProgress();
+  try {
+    // Build the domain selector from the actual archive, so new traditions
+    // can never become disconnected from the engine.
+    const selector = document.querySelector('.category-filter');
+    if (selector) {
+      const categories = [...new Set(paradoxesData.paradoxes.map(p => p.category))].sort();
+      selector.innerHTML = '<option value="">ALL DOMAINS · ' + paradoxesData.paradoxes.length + '</option>' +
+        categories.map(category => '<option value="' + category.replace(/"/g, '&quot;') + '">' +
+          category.toUpperCase() + ' · ' + paradoxesData.paradoxes.filter(p => p.category === category).length + '</option>').join('');
+    }
+
+    const totalNodes = document.querySelectorAll('[data-archive-total]');
+    totalNodes.forEach(node => node.textContent = paradoxesData.paradoxes.length);
+
+    renderParadoxGrid();
+    setupEventListeners();
+    updateProgress();
+  } catch (error) {
+    console.error('Prince of Paradox engine initialization failed:', error);
+    const grid = document.getElementById('paradoxGrid');
+    if (grid) {
+      grid.innerHTML = '<div class="engine-error"><strong>ENGINE PAUSED</strong><span>The archive could not initialize. Refresh once to restart the chamber.</span></div>';
+    }
+  }
 });
 
 // Setup all event listeners
 function setupEventListeners() {
   // Theme toggle
-  document.querySelector('.theme-toggle').addEventListener('click', toggleTheme);
-  
+  const themeToggle = document.querySelector('.theme-toggle');
+  if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+
   // Search functionality
-  document.querySelector('.search-input').addEventListener('input', handleSearch);
-  
+  const searchInput = document.querySelector('.search-input');
+  if (searchInput) searchInput.addEventListener('input', handleSearch);
+
   // Category filter
-  document.querySelector('.category-filter').addEventListener('change', handleCategoryFilter);
+  const categoryFilter = document.querySelector('.category-filter');
+  if (categoryFilter) categoryFilter.addEventListener('change', handleCategoryFilter);
+
+  // Filter deck toggle
+  const filterToggle = document.querySelector('.filter-toggle');
+  const controlDeck = document.querySelector('.control-deck');
+  if (filterToggle && controlDeck) {
+    filterToggle.addEventListener('click', () => {
+      controlDeck.classList.toggle('filters-expanded');
+      filterToggle.classList.toggle('active');
+    });
+  }
   
   // Modal navigation
   document.getElementById('prevParadox').addEventListener('click', () => navigateParadox(-1));
