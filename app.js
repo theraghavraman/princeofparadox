@@ -399,15 +399,7 @@ const paradoxesData = {
     modernRelevance:"Language models, semantic grounding and embodied AI",
     visualMetaphor:"Two mirrored planets with identical labels attached to different liquids", color:"#06b6d4"
   },
-  {
-    id:"swampman", title:"Swampman", category:"Metaphysical", philosopher:"Donald Davidson",
-    summary:"If a person is accidentally recreated molecule-for-molecule, does the replica have the original person's beliefs?",
-    description:"Davidson's Swampman thought experiment challenges whether meaning and mental content can arise instantaneously from physical duplication without causal history.",
-    structure:["A person is destroyed by lightning","An identical organism appears by chance","It behaves exactly like the original","Does it have genuine beliefs, memories and meaning?"],
-    examples:["Instant cloning","Artificial minds","Digital reconstruction"],
-    modernRelevance:"AI agents, machine consciousness and causal accounts of meaning",
-    visualMetaphor:"A human silhouette reconstructed from a flash of static electricity", color:"#7dd3fc"
-  },
+
 
   {
     id:"omnipotence", title:"Omnipotence Paradox", category:"Religious", philosopher:"Medieval theological tradition",
@@ -427,24 +419,8 @@ const paradoxesData = {
     modernRelevance:"AI ethics, moral foundations and secular versus religious normativity",
     visualMetaphor:"Two luminous paths branching from one moral question", color:"#f59e0b"
   },
-  {
-    id:"buridan", title:"Buridan's Ass", category:"Psychological", philosopher:"Jean Buridan",
-    summary:"An equally hungry animal placed exactly between two identical sources of food cannot rationally choose either.",
-    description:"The thought experiment questions whether pure rational calculation can produce action when alternatives have exactly equal reasons.",
-    structure:["Two identical options are equally desirable","No preference distinguishes them","Perfect symmetry removes a deciding reason","The agent risks remaining motionless"],
-    examples:["Decision paralysis","Tie-breaking algorithms","Indecision under symmetry"],
-    modernRelevance:"AI decision policies, optimization and randomization strategies",
-    visualMetaphor:"A symmetric decision node with two identical glowing paths", color:"#84cc16"
-  },
-  {
-    id:"pascal-wager", title:"Pascal's Wager", category:"Existential", philosopher:"Blaise Pascal",
-    summary:"If belief has infinite possible payoff, can practical reason justify believing?",
-    description:"Pascal frames belief as a decision under uncertainty: finite costs may appear negligible beside an infinite possible reward, raising questions about rational choice and belief.",
-    structure:["Consider belief and disbelief","Assign radically different possible outcomes","Compare expected consequences","Ask whether infinite stakes change rational action"],
-    examples:["Risk decisions","Insurance","Existential uncertainty"],
-    modernRelevance:"Decision theory, risk communication and rational choice",
-    visualMetaphor:"A finite coin balanced against an infinite vertical axis", color:"#facc15"
-  },
+
+
   {
     id:"free-will", title:"Free Will vs Determinism", category:"Metaphysical", philosopher:"Hume / Kant / contemporary philosophy",
     summary:"If every action has prior causes, in what sense could a person have chosen otherwise?",
@@ -454,15 +430,7 @@ const paradoxesData = {
     modernRelevance:"Neuroscience, law, autonomous systems and moral responsibility",
     visualMetaphor:"A branching tree whose branches are connected by hidden causal threads", color:"#8b5cf6"
   },
-  {
-    id:"heaps", title:"Heap / Vagueness Revisited", category:"Linguistic", philosopher:"Ancient Greek logical tradition",
-    summary:"When does a collection stop being a collection after tiny changes?",
-    description:"The heap family shows how concepts with no sharp boundary can defeat apparently valid step-by-step reasoning.",
-    structure:["A clear case exists","A tiny change seems unable to alter the category","Repeat the tiny change many times","The original category eventually disappears"],
-    examples:["Rich and poor","Old and young","Safe and dangerous"],
-    modernRelevance:"Regulation, threshold design, machine classification and policy",
-    visualMetaphor:"A gradient field slowly crossing an invisible semantic boundary", color:"#fb7185"
-  },
+
   {
     id:"gambler", title:"Gambler's Fallacy", category:"Psychological", philosopher:"Probability theory tradition",
     summary:"After many tails, people often feel heads is 'due' even when trials are independent.",
@@ -472,15 +440,7 @@ const paradoxesData = {
     modernRelevance:"Behavioral finance, statistics, gambling psychology and AI forecasting",
     visualMetaphor:"A probability wheel whose past spins leave no physical trace", color:"#fb923c"
   },
-  {
-    id:"clustering", title:"Clustering Illusion", category:"Psychological", philosopher:"Daniel Kahneman / Amos Tversky",
-    summary:"Random events often look meaningful because humans are poor at recognizing genuine randomness.",
-    description:"Random processes naturally create clusters. Observers can mistake those clusters for patterns, intention or hidden causes.",
-    structure:["Generate a random sequence","Clusters naturally appear","Observer searches for explanation","Noise is interpreted as signal"],
-    examples:["Sports streaks","Stock charts","Coin-toss patterns"],
-    modernRelevance:"Data science, anomaly detection, AI pattern recognition and misinformation",
-    visualMetaphor:"A field of random points forming accidental constellations", color:"#38bdf8"
-  },
+
   {
     id:"braess", title:"Braess's Paradox", category:"Political", philosopher:"Dietrich Braess",
     summary:"Adding a road to a network can make everyone's journey slower.",
@@ -527,15 +487,7 @@ const paradoxesData = {
     modernRelevance:"Causal models, time-travel physics and information theory",
     visualMetaphor:"A glowing object moving around a closed temporal ring", color:"#c084fc"
   },
-  {
-    id:"predestination", title:"Predestination Paradox", category:"Temporal", philosopher:"Time-travel thought-experiment tradition",
-    summary:"Trying to prevent an event may become the very cause that makes it happen.",
-    description:"A traveler goes back to prevent an event and unknowingly performs the actions that guarantee it. The attempt to change history becomes part of history.",
-    structure:["A future event motivates intervention","Traveler enters the past","Intervention creates the conditions for the event","The attempt to prevent it ensures it"],
-    examples:["Time-travel fiction","Causal loops","Self-fulfilling predictions"],
-    modernRelevance:"Causal inference and feedback systems",
-    visualMetaphor:"A timeline whose two ends meet at the same event", color:"#a855f7"
-  },
+
   {
     id:"unexpected-utility", title:"The Utility Monster", category:"Ethical", philosopher:"Robert Nozick",
     summary:"What if one being gains vastly more utility from every resource than everyone else?",
@@ -554,15 +506,7 @@ const paradoxesData = {
     modernRelevance:"Longtermism, AI ethics and global policy",
     visualMetaphor:"A small bright city transforming into an immense dim horizon", color:"#fb7185"
   },
-  {
-    id:"nonidentity", title:"Non-Identity Problem", category:"Ethical", philosopher:"Derek Parfit",
-    summary:"How can a decision harm future people if the decision changes who will exist?",
-    description:"Some choices affect the identities of future people rather than merely their circumstances. A harmful policy may produce people whose lives are still worth living, complicating the idea of harm.",
-    structure:["A present choice changes future conditions","That choice also changes who will be born","The affected person would not exist under the alternative","Can the person say the decision harmed them?"],
-    examples:["Climate policy","Reproductive ethics","Intergenerational justice"],
-    modernRelevance:"Climate change, population ethics and long-term governance",
-    visualMetaphor:"Two future timelines containing entirely different faces", color:"#2dd4bf"
-  },
+
   {
     id:"veils", title:"Veil of Ignorance", category:"Political", philosopher:"John Rawls",
     summary:"What principles would you choose if you did not know your own place in society?",
@@ -572,15 +516,7 @@ const paradoxesData = {
     modernRelevance:"Algorithmic fairness, public policy and institutional design",
     visualMetaphor:"Anonymous silhouettes designing a society behind translucent glass", color:"#06b6d4"
   },
-  {
-    id:"scapegoat", title:"Scapegoat Mechanism", category:"Political", philosopher:"René Girard",
-    summary:"Can a community restore unity by collectively blaming one person?",
-    description:"Girard's mimetic theory describes how rivalry can converge on a victim, temporarily restoring social order while concealing the mechanism that produced the conflict.",
-    structure:["Desire spreads through imitation","Rivalry increases","A group converges on a single victim","Violence temporarily restores unity"],
-    examples:["Political blame","Moral panics","Online pile-ons"],
-    modernRelevance:"Social media dynamics, propaganda and collective behavior",
-    visualMetaphor:"Many identical arrows converging on one illuminated silhouette", color:"#ef4444"
-  },
+
 
   {
     id:"avicenna", title:"Avicenna's Flying Man", category:"Eastern Philosophy", philosopher:"Ibn Sina (Avicenna)",
@@ -663,15 +599,7 @@ const paradoxesData = {
     modernRelevance:"Virtual reality, simulation theory and consciousness",
     visualMetaphor:"A human silhouette and butterfly exchanging places inside a dream loop", color:"#f472b6"
   },
-  {
-    id:"zhuangzi-usefulness", title:"The Useless Tree", category:"Eastern Philosophy", philosopher:"Zhuangzi",
-    summary:"Can being considered useless become the very thing that allows something to survive?",
-    description:"Zhuangzi's tree is too twisted for timber and therefore escapes the axe. What looks like uselessness from one perspective becomes survival from another.",
-    structure:["A tree fails the standard of usefulness","Woodcutters ignore it","Its apparent uselessness protects it","The standard of value becomes the source of danger"],
-    examples:["Non-productive time","Alternative lifestyles","Systems that resist optimization"],
-    modernRelevance:"AI optimization, ecological thinking and critiques of productivity",
-    visualMetaphor:"A crooked tree glowing while perfectly straight trees disappear into the forest", color:"#84cc16"
-  },
+
   {
     id:"wu-wei", title:"Wu Wei Paradox", category:"Eastern Philosophy", philosopher:"Laozi / Daoist tradition",
     summary:"How can deliberate non-forcing produce more effective action than forceful control?",
@@ -762,15 +690,7 @@ const paradoxesData = {
     modernRelevance:"Identity, contemplative psychology and transformative learning",
     visualMetaphor:"Two luminous circles merging until their boundary disappears", color:"#f472b6"
   },
-  {
-    id:"ghazali-doubt", title:"Al-Ghazali's Skeptical Crisis", category:"Eastern Philosophy", philosopher:"Abu Hamid al-Ghazali",
-    summary:"If every source of knowledge can be doubted, what finally restores confidence in knowledge?",
-    description:"Al-Ghazali's intellectual crisis explores radical doubt about sensory and rational certainty before a transformed mode of trust and understanding.",
-    structure:["Doubt sensory perception","Question rational inference","Notice that doubt itself requires standards","Ask what kind of certainty can survive radical skepticism"],
-    examples:["Dream skepticism","Mathematical certainty","Religious knowledge"],
-    modernRelevance:"Epistemology, AI uncertainty and foundations of knowledge",
-    visualMetaphor:"A staircase of certainty disappearing beneath each step as it is questioned", color:"#8b5cf6"
-  },
+
   {
     id:"four-causes", title:"Four Causes", category:"Eastern Philosophy", philosopher:"Aristotle",
     summary:"Can one explanation capture material, formal, efficient and final causes at once?",
