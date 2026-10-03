@@ -1,120 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#090b14">
-<meta name="description" content="Prince of Paradox — an interactive atlas of philosophical paradoxes, contradictions and thought experiments.">
-<title>Prince of Paradox — An Atlas of Impossible Questions</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#05060a"><meta name="description" content="Prince of Paradox — a futuristic interactive atlas of philosophical paradoxes and thought experiments.">
+<title>Prince of Paradox — The Thought Engine</title><link rel="stylesheet" href="style.css">
 </head>
 <body data-color-scheme="dark">
-<div class="ambient ambient-a"></div><div class="ambient ambient-b"></div><div class="noise"></div>
-<header class="header" id="top">
-  <div class="container">
-    <div class="header__content">
-      <nav class="top-nav">
-        <a class="brand" href="#top"><span class="brand-mark">♜</span><span>Prince <i>of</i> Paradox</span></a>
-        <div class="nav-links"><a href="#atlas">Atlas</a><a href="#about">Method</a><a href="#questions">Questions</a></div>
-        <button class="btn btn--secondary theme-toggle" aria-label="Toggle dark/light theme"><span class="theme-toggle__icon">◐</span></button>
-      </nav>
-      <div class="hero">
-        <div class="hero-copy">
-          <div class="eyebrow"><span></span> PHILOSOPHICAL ATLAS · 10 THOUGHT EXPERIMENTS</div>
-          <h1>Where logic<br><em>turns against itself.</em></h1>
-          <p class="header__subtitle">A cinematic field guide to contradictions that make ordinary assumptions feel strange again.</p>
-          <div class="hero-actions">
-            <a class="btn btn--primary" href="#atlas">Enter the atlas ↓</a>
-            <a class="btn btn--secondary" href="#about">How to use it →</a>
-          </div>
-        </div>
-        <div class="hero-orbit">
-          <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="orbit orbit-3"></div>
-          <div class="hero-core"><span>?</span><small>THINK<br>AGAIN</small></div>
-          <div class="orbit-label label-a">TRUTH</div><div class="orbit-label label-b">IDENTITY</div><div class="orbit-label label-c">TIME</div><div class="orbit-label label-d">MIND</div>
-        </div>
-      </div>
-      <div class="hero-strip">
-        <div><strong>10</strong><span>paradoxes</span></div><div><strong>7</strong><span>domains</span></div><div><strong>∞</strong><span>interpretations</span></div><div><strong>01</strong><span>rule: question everything</span></div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<main class="main">
-<section class="intro-section" id="about">
-<div class="container">
-  <div class="section-kicker">00 / The premise</div>
-  <div class="intro-grid">
-    <div><h2>A paradox is not merely a puzzle.<br><span>It is a pressure test for thought.</span></h2></div>
-    <div><p>These thought experiments expose places where our intuitions, language, mathematics, morality or concepts of identity stop fitting neatly together.</p><p>Don't rush to solve them. Read the setup. Follow every implication. Notice where your intuition changes.</p></div>
-  </div>
-</div>
-</section>
-
-<section class="atlas-section" id="atlas">
-<div class="container">
-  <div class="section-heading">
-    <div><div class="section-kicker">01 / The atlas</div><h2>Choose your contradiction.</h2><p>Open a card to enter its world. Search by idea, philosopher or domain. Bookmark the ones that follow you home.</p></div>
-    <div class="control-cluster">
-      <button class="btn btn--secondary filter-toggle" type="button">⌘ Filters</button>
-      <div class="search-container"><span>⌕</span><input type="text" class="form-control search-input" placeholder="Search paradoxes, thinkers, ideas…" aria-label="Search paradoxes"></div>
-      <select class="form-control category-filter" aria-label="Filter by category">
-        <option value="">All Categories</option><option value="Logical">Logical</option><option value="Ethical">Ethical</option><option value="Metaphysical">Metaphysical</option><option value="Philosophy of Mind">Philosophy of Mind</option><option value="Psychological">Psychological</option><option value="Temporal">Temporal</option><option value="Political">Political</option>
-      </select>
-    </div>
-  </div>
-  <div class="progress-panel panel">
-    <div><span class="progress-text">Atlas explored <strong class="progress-count">0</strong> / 10</span><span class="progress-caption">Open a paradox to mark it explored</span></div>
-    <div class="progress-bar"><div class="progress-fill"></div></div>
-  </div>
-  <section class="paradox-grid" id="paradoxGrid"></section>
-</div>
-</section>
-
-<section class="questions-section" id="questions">
-<div class="container">
-  <div class="section-heading compact"><div><div class="section-kicker">02 / Questions</div><h2>Ten doors. No easy exits.</h2></div></div>
-  <div class="question-wall">
-    <article><span>01</span><h3>Can a sentence contradict itself?</h3><p>Truth becomes unstable when language points back at its own truth value.</p></article>
-    <article><span>02</span><h3>What makes you the same person?</h3><p>Continuity, memory, body, story—or something else?</p></article>
-    <article><span>03</span><h3>Can an action be right and wrong?</h3><p>Consequences and intentions can pull moral judgment apart.</p></article>
-    <article><span>04</span><h3>Can information equal experience?</h3><p>Knowing every fact about red may not be the same as seeing red.</p></article>
-    <article><span>05</span><h3>Can symbols understand?</h3><p>Perfect language behavior may still leave semantics unresolved.</p></article>
-    <article><span>06</span><h3>Can a set contain itself?</h3><p>Self-reference helped expose cracks in naive set theory.</p></article>
-  </div>
-</div>
-</section>
-
-<section class="method-section">
-<div class="container">
-  <div class="method-card panel">
-    <div><div class="section-kicker">03 / The method</div><h2>Read slowly.<br>Interrogate the frame.</h2></div>
-    <div class="method-steps">
-      <div><b>01</b><h3>Setup</h3><p>Understand the world the paradox creates.</p></div>
-      <div><b>02</b><h3>Pressure</h3><p>Follow each implication without skipping steps.</p></div>
-      <div><b>03</b><h3>Friction</h3><p>Find the assumption that starts breaking.</p></div>
-      <div><b>04</b><h3>Aftermath</h3><p>Ask what the paradox changes about the original concept.</p></div>
-    </div>
-  </div>
-</div>
-</section>
-
-<section class="footer-cta">
-<div class="container"><div class="cta-inner panel"><div class="section-kicker">THE LAST PARADOX</div><h2>If you think you understand it,<br><em>look again.</em></h2><p>Every contradiction is an invitation to inspect the machinery behind an assumption.</p><a class="btn btn--primary" href="#top">Return to the beginning ↑</a></div></div>
-</section>
-
-<div class="modal hidden" id="paradoxModal" role="dialog" aria-modal="true" aria-label="Paradox details">
-  <div class="modal__overlay" onclick="closeModal()"></div>
-  <div class="modal__content">
-    <button class="modal__close" onclick="closeModal()" aria-label="Close modal">×</button>
-    <div class="modal__body" id="modalBody"></div>
-    <div class="modal__navigation"><button class="btn btn--secondary" id="prevParadox">← Previous</button><button class="btn btn--secondary" id="nextParadox">Next →</button></div>
-  </div>
-</div>
+<div class="scene-bg"><div class="stars"></div><div class="grid-floor"></div><div class="scanlines"></div><div class="ambient ambient-a"></div><div class="ambient ambient-b"></div></div>
+<header class="header" id="top"><div class="container">
+<nav class="top-nav"><a class="brand" href="#top"><span class="brand-mark">⟐</span><span>PRINCE <i>OF</i> PARADOX</span></a><div class="nav-links"><a href="#atlas">01 Atlas</a><a href="#questions">02 Signals</a><a href="#method">03 Method</a></div><button class="theme-toggle" aria-label="Toggle visual mode"><span>◐</span></button></nav>
+<div class="hero">
+<div class="hero-copy"><div class="eyebrow"><b></b>PHILOSOPHY / SYSTEM 07</div><div class="hero-index">THOUGHT EXPERIMENTS <span>//</span> LIVE ARCHIVE</div><h1>PRINCE<br><em>OF</em> PARADOX</h1><p class="hero-lede">A visual machine for questions that refuse to stay inside the rules that created them.</p><div class="hero-actions"><a class="btn btn--primary" href="#atlas"><span>ENTER THE ENGINE</span><i>↘</i></a><a class="btn btn--ghost" href="#about">READ THE PREMISE <i>+</i></a></div><div class="hero-micro"><span>10 PARADOXES</span><span>07 DOMAINS</span><span>∞ INTERPRETATIONS</span></div></div>
+<div class="paradox-machine"><div class="machine-radar"></div><div class="machine-ring ring-a"></div><div class="machine-ring ring-b"></div><div class="machine-ring ring-c"></div><div class="machine-axis axis-x"></div><div class="machine-axis axis-y"></div><div class="machine-core"><span>?</span><small>QUESTION<br>THE FRAME</small></div><div class="floating-glyph glyph-a">∞</div><div class="floating-glyph glyph-b">∴</div><div class="floating-glyph glyph-c">≠</div><div class="floating-glyph glyph-d">Ω</div><div class="floating-glyph glyph-e">⟳</div><div class="floating-glyph glyph-f">Ψ</div><div class="floating-glyph glyph-g">∅</div><div class="floating-glyph glyph-h">⊕</div><div class="machine-caption"><span>PARADOX</span><b>01</b><i>ACTIVE</i></div></div>
+</div><div class="ticker"><div>TRUTH <b>×</b> IDENTITY <b>×</b> TIME <b>×</b> MIND <b>×</b> MORALITY <b>×</b> REALITY <b>×</b> TRUTH <b>×</b> IDENTITY <b>×</b> TIME <b>×</b></div></div>
+</div></header>
+<main>
+<section class="intro-section" id="about"><div class="container"><div class="section-kicker"><span>00</span> THE PREMISE</div><div class="intro-grid"><div class="intro-title"><p class="display-label">WHEN THE MAP BREAKS</p><h2>A paradox is a <em>stress test</em> for reality.</h2></div><div class="intro-copy"><p>These thought experiments expose the seams between intuition, language, mathematics, morality, identity and consciousness.</p><p>You are not here to collect answers. You are here to watch an assumption bend until you can finally see its machinery.</p><div class="signal-row"><span>01 / OBSERVE</span><span>02 / FOLLOW</span><span>03 / DOUBT</span></div></div></div></div></section>
+<section class="atlas-section" id="atlas"><div class="container"><div class="section-heading"><div><div class="section-kicker"><span>01</span> THE ATLAS</div><h2>Choose a world<br><em>that breaks its rules.</em></h2></div><div class="atlas-side-note"><span>ARCHIVE STATUS</span><strong>10 / 10 LOADED</strong><i>click a specimen to open its chamber</i></div></div>
+<div class="control-deck panel"><button class="filter-toggle" type="button"><span>⌘</span> FILTERS</button><label class="search-container"><span>⌕</span><input type="text" class="form-control search-input" placeholder="Search thinker, idea, paradox…" aria-label="Search paradoxes"></label><select class="form-control category-filter" aria-label="Filter by category"><option value="">ALL DOMAINS</option><option value="Logical">LOGICAL</option><option value="Ethical">ETHICAL</option><option value="Metaphysical">METAPHYSICAL</option><option value="Philosophy of Mind">MIND</option><option value="Psychological">PSYCHOLOGICAL</option><option value="Temporal">TEMPORAL</option><option value="Political">POLITICAL</option></select><div class="deck-status"><i></i>ARCHIVE ONLINE</div></div>
+<div class="progress-panel panel"><div><span class="progress-text">EXPLORATION <strong class="progress-count">0</strong> / 10</span><span class="progress-caption">Every opened chamber becomes part of your trail.</span></div><div class="progress-bar"><div class="progress-fill"></div></div></div><section class="paradox-grid" id="paradoxGrid"></section></div></section>
+<section class="questions-section" id="questions"><div class="container"><div class="section-heading compact"><div><div class="section-kicker"><span>02</span> SIGNALS</div><h2>Questions detected<br><em>in the noise.</em></h2></div><p class="section-blurb">The archive does not tell you what to believe. It changes the angle from which you are forced to look.</p></div><div class="question-wall">
+<article><span class="q-glyph">01 / ∞</span><h3>Can a sentence defeat its own truth?</h3><p>Self-reference turns language into a mirror with no stable image.</p><b>TRUTH / LOGIC</b></article>
+<article><span class="q-glyph">02 / ◈</span><h3>What survives when everything is replaced?</h3><p>Body, memory, continuity, story — which one carries identity?</p><b>IDENTITY / TIME</b></article>
+<article><span class="q-glyph">03 / ⚡</span><h3>Can doing less cause more harm?</h3><p>Consequences and intention pull moral judgment in different directions.</p><b>ETHICS / ACTION</b></article>
+<article><span class="q-glyph">04 / ●</span><h3>Can information become experience?</h3><p>Knowing every fact about red may still leave seeing red untouched.</p><b>MIND / EXPERIENCE</b></article>
+<article><span class="q-glyph">05 / Ψ</span><h3>Can symbols understand anything?</h3><p>Perfect responses can still leave the question of meaning unresolved.</p><b>MIND / LANGUAGE</b></article>
+<article><span class="q-glyph">06 / ⟳</span><h3>Can a system contain itself?</h3><p>Self-reference can expose the assumptions hidden inside a system.</p><b>SETS / SELF-REFERENCE</b></article>
+</div></div></section>
+<section class="method-section" id="method"><div class="container"><div class="method-card panel"><div class="method-intro"><div class="section-kicker"><span>03</span> THE METHOD</div><p class="display-label">DON'T SOLVE IT TOO SOON</p><h2>Interrogate<br><em>the frame.</em></h2><div class="method-orbit">?</div></div><div class="method-steps">
+<div><b>01</b><div><h3>SETUP</h3><p>Accept the rules of the imagined world before judging them.</p></div></div><div><b>02</b><div><h3>PRESSURE</h3><p>Follow every implication without quietly changing the premise.</p></div></div><div><b>03</b><div><h3>FRICTION</h3><p>Find the assumption that can no longer carry the weight.</p></div></div><div><b>04</b><div><h3>AFTERMATH</h3><p>Ask what the contradiction reveals about the original idea.</p></div></div>
+</div></div></div></section>
+<section class="footer-cta"><div class="container"><div class="cta-inner panel"><div class="cta-glyph">∴</div><div class="section-kicker">THE LAST PARADOX</div><h2>If you think you<br><em>understand it.</em></h2><p>Look again. The most interesting contradiction is often the assumption you stopped noticing.</p><a class="btn btn--primary" href="#top">REBOOT THE THOUGHT ENGINE <i>↑</i></a></div></div></section>
+<div class="modal hidden" id="paradoxModal" role="dialog" aria-modal="true" aria-label="Paradox details"><div class="modal__overlay" onclick="closeModal()"></div><div class="modal__content"><button class="modal__close" onclick="closeModal()" aria-label="Close modal">×</button><div class="modal__body" id="modalBody"></div><div class="modal__navigation"><button class="btn btn--ghost" id="prevParadox">← PREVIOUS CHAMBER</button><button class="btn btn--primary" id="nextParadox">NEXT CHAMBER →</button></div></div></div>
 </main>
-
-<footer class="site-footer"><div class="container"><div class="footer-brand"><span class="brand-mark">♜</span><strong>Prince <i>of</i> Paradox</strong></div><p>Logic · ethics · identity · consciousness · time</p><small>Built as an interactive philosophy atlas.</small></div></footer>
-<script src="app.js"></script>
-</body>
-</html>
+<footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand"><span class="brand-mark">⟐</span><strong>PRINCE <i>OF</i> PARADOX</strong></div><span>LOGIC / ETHICS / IDENTITY / CONSCIOUSNESS / TIME</span></div><div class="footer-bottom"><small>AN INTERACTIVE PHILOSOPHY ARCHIVE</small><small>QUESTION EVERYTHING / INCLUDING THIS</small></div></div></footer>
+<script src="app.js"></script></body></html>
