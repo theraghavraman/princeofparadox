@@ -408,15 +408,7 @@ const paradoxesData = {
     modernRelevance:"AI agents, machine consciousness and causal accounts of meaning",
     visualMetaphor:"A human silhouette reconstructed from a flash of static electricity", color:"#7dd3fc"
   },
-  {
-    id:"frenchman", title:"The Frenchman and the Englishman", category:"Linguistic", philosopher:"Philosophical language tradition",
-    summary:"Can a statement change truth merely because different speakers use the same words differently?",
-    description:"Indexicals, context and reference can make apparently identical statements behave differently across speakers and situations.",
-    structure:["Two speakers utter the same sentence","Their contexts differ","Reference shifts with speaker or situation","Identical words can carry different truth conditions"],
-    examples:["I / here / now","Legal testimony","Cross-cultural translation"],
-    modernRelevance:"Natural-language AI, translation and conversational agents",
-    visualMetaphor:"Two speech bubbles pointing to different coordinates", color:"#f472b6"
-  },
+
   {
     id:"omnipotence", title:"Omnipotence Paradox", category:"Religious", philosopher:"Medieval theological tradition",
     summary:"Can an omnipotent being create a stone so heavy that it cannot lift it?",
@@ -507,15 +499,7 @@ const paradoxesData = {
     modernRelevance:"Data analytics, causal inference, dashboards and AI fairness",
     visualMetaphor:"Two downward graphs merging into one upward graph", color:"#22c55e"
   },
-  {
-    id:"monty-variation", title:"Bertrand's Box / Three Boxes", category:"Logical", philosopher:"Joseph Bertrand",
-    summary:"Random selection can hide conditional information that radically changes the odds.",
-    description:"Bertrand's probability puzzles show how the procedure used to obtain information can matter as much as the information itself.",
-    structure:["Construct apparently symmetric cases","Reveal information conditionally","The cases are no longer equally likely","The sampling mechanism changes the answer"],
-    examples:["Bayesian diagnosis","Randomized experiments","Selection bias"],
-    modernRelevance:"Statistics, machine learning and experimental design",
-    visualMetaphor:"Three boxes whose probabilities rearrange when one is opened", color:"#14b8a6"
-  },
+
   {
     id:"doomsday", title:"Doomsday Argument", category:"Temporal", philosopher:"Brandon Carter",
     summary:"Can your position in the sequence of all humans tell you something about humanity's future?",
