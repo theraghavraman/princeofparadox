@@ -230,7 +230,7 @@ const paradoxesData = {
       "modernRelevance": "Social media content moderation, democratic backsliding, free speech debates, platform governance",
       "visualMetaphor": "Balance scales showing the tension between tolerance and its limits",
       "color": "#87CEEB"
-    }
+    },
 
   // ─────────────────────────────────────────────────────────────────────
   // EXTENDED ARCHIVE — 50 additional Western + Eastern thought experiments
